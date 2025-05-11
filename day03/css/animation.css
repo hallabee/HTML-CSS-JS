@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@keyframes rotation {
+	/* 시작 지점을 0도로 종료 지점을 100도로 지정한다 */
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* article {
+	width: 400px;
+	height: 400px;
+	background: blue;
+	margin: 100px auto;	
+	//한세트 지속 시간은 2초이고 가속도는 등속을 나타내는 linear, 
+	//반복횟수는 2회, 지연 시간은 0초이다
+	animation-name: rotation;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	animation-delay: 0s;
+	//animation 축약문
+	animation: rotation 2s linear infinite 0s; animation 
+	
+} */
+
+/* 마우스 커서를 올리면 일시 정지하기 */
+article {
+	width: 400px;
+	height: 400px;
+	background: blue;
+	margin: 100px auto;	
+	animation-name: rotation;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	/* 요소에 마우스 커서 올리기 전까지 계속 무한 반복  */
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-play-state: running;
+	transform: rotate(50deg);
+} 
+
+
+/* 마우스 커서를 올리면 일시 정지하기 */
+article:hover {
+	animation-play-state: paused;
+} 
+
+

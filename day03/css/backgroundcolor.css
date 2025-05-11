@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+article {
+	width: 200px;
+	height: 200px;
+	background: pink;
+	margin: 100px auto;
+}
+
+@media screen and (max-width: 900px) {
+	/* 화면의 너비값이 900px이하이면 배경색이 오렌지로 변경 */
+	article {
+		background: orange;
+	}
+}
+
+@media screen and (max-width:400px) {
+	/* 화면의 너비값이 400px이하이면 배경색이 아쿠아로 변경 */
+	article {
+			background:aqua;
+	}
+}

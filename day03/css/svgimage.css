@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+article {
+	width: 500px; 
+	border: 1px solid #000;
+	box-sizing: border-box; 
+	padding: 50px;
+	margin: 50px auto;
+}
+article svg {
+	width: 100%;
+}
+
+/* path 속성 바꾸기 */
+article svg path {
+	/* fill 속성은 배경색을 채우고
+	stroke 속성을 선의 색을 지정한다
+	stroke-wifth속성은 선의 굵기를 지정한다 */
+	fill: transparent; 
+	stroke: red;
+	stroke-width: 1;
+}
